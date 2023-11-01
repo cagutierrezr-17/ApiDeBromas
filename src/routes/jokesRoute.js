@@ -8,4 +8,4 @@ router.post("/api/jokes/new", jokesController.createJoke);
 router.put("/api/jokes/update/:idJoke", jokesController.updateJokeById);
 router.delete("/api/jokes/delete/:idJoke", jokesController.deleteJokeById);
 
-export {router};
+export { router };

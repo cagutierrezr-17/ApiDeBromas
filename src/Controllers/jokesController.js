@@ -20,13 +20,13 @@ const createJoke = async (req, res) => {
 const updateJokeById = async (req, res) => {
 	let id = req.params.idJoke;
 	let jokeData = req.body
-	
+
 	let jokeUpdate = await modelJokes.findByIdAndUpdate(id, jokeData);
 
 	res.status(200).json(jokeUpdate);
 }
 
-const deleteJokeById =  async (req, res) => {
+const deleteJokeById = async (req, res) => {
 	let id = req.params.idJoke;
 	let jokeDelete = await modelJokes.findByIdAndDelete(id);
 	console.log(jokeDelete);
